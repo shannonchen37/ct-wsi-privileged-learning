@@ -1,0 +1,30 @@
+seed: 42
+ct_features: /path/to/ct_features.pkl
+wsi_features: /path/to/wsi_features/
+clinical_table: /path/to/clinical_table.csv
+manifest: /path/to/manifest.csv
+output_dir: ./outputs/
+
+ct:
+  batch_size: 16
+  epochs: 50
+  learning_rate: 0.01
+
+wsi:
+  batch_size: 8
+  epochs: 20
+  learning_rate: 0.01
+
+student:
+  epochs: 50
+  learning_rate: 0.01
+  step_size: 30
+  gamma: 0.1
+
+optimizer:
+  momentum: 0.9
+  weight_decay: 0.0005
+
+anchor_weight: 0.1
+pseudo_weight: 1.0
+
