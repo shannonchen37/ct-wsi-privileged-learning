@@ -1,0 +1,30 @@
+{
+  "task": "LUAD versus LUSC",
+  "evaluation": "five-fold pooled out-of-fold",
+  "seed": 42,
+  "n_cases": 320,
+  "metrics": {
+    "25": {
+      "ct_only": {"mean_auc": 0.8628, "auc_population_std": 0.0404, "pooled_auc": 0.8416, "accuracy": 0.7781, "sensitivity": 0.7419, "specificity": 0.8121, "f1": 0.7641},
+      "ct_anchors": {"mean_auc": 0.8588, "auc_population_std": 0.0428, "pooled_auc": 0.8508, "accuracy": 0.7531, "sensitivity": 0.7161, "specificity": 0.7879, "f1": 0.7375},
+      "wsi_teacher": {"mean_auc": 0.9570, "auc_population_std": 0.0278, "pooled_auc": 0.9525, "accuracy": 0.8875, "sensitivity": 0.8968, "specificity": 0.8788, "f1": 0.8854},
+      "ct_self_training": {"mean_auc": 0.8465, "auc_population_std": 0.0369, "pooled_auc": 0.8272, "accuracy": 0.7688, "sensitivity": 0.7290, "specificity": 0.8061, "f1": 0.7533},
+      "privileged_wsi": {"mean_auc": 0.8862, "auc_population_std": 0.0358, "pooled_auc": 0.8733, "accuracy": 0.7781, "sensitivity": 0.7290, "specificity": 0.8242, "f1": 0.7609}
+    },
+    "50": {
+      "ct_only": {"mean_auc": 0.9032, "auc_population_std": 0.0471, "pooled_auc": 0.8835, "accuracy": 0.8000, "sensitivity": 0.7935, "specificity": 0.8061, "f1": 0.7935},
+      "ct_anchors": {"mean_auc": 0.9056, "auc_population_std": 0.0432, "pooled_auc": 0.8835, "accuracy": 0.7875, "sensitivity": 0.7613, "specificity": 0.8121, "f1": 0.7763},
+      "wsi_teacher": {"mean_auc": 0.9742, "auc_population_std": 0.0157, "pooled_auc": 0.9683, "accuracy": 0.9187, "sensitivity": 0.9226, "specificity": 0.9152, "f1": 0.9167},
+      "ct_self_training": {"mean_auc": 0.8886, "auc_population_std": 0.0358, "pooled_auc": 0.8643, "accuracy": 0.7719, "sensitivity": 0.7548, "specificity": 0.7879, "f1": 0.7622},
+      "privileged_wsi": {"mean_auc": 0.9013, "auc_population_std": 0.0415, "pooled_auc": 0.8878, "accuracy": 0.7969, "sensitivity": 0.8000, "specificity": 0.7939, "f1": 0.7923}
+    },
+    "100": {
+      "ct_only": {"mean_auc": 0.9110, "auc_population_std": 0.0510, "pooled_auc": 0.8997, "accuracy": 0.8250, "sensitivity": 0.8129, "specificity": 0.8364, "f1": 0.8182},
+      "ct_anchors": {"mean_auc": 0.9101, "auc_population_std": 0.0502, "pooled_auc": 0.9003, "accuracy": 0.8250, "sensitivity": 0.8194, "specificity": 0.8303, "f1": 0.8194},
+      "wsi_teacher": {"mean_auc": 0.9687, "auc_population_std": 0.0262, "pooled_auc": 0.9678, "accuracy": 0.9187, "sensitivity": 0.9290, "specificity": 0.9091, "f1": 0.9172},
+      "ct_self_training": {"mean_auc": 0.9101, "auc_population_std": 0.0502, "pooled_auc": 0.9003, "accuracy": 0.8250, "sensitivity": 0.8194, "specificity": 0.8303, "f1": 0.8194},
+      "privileged_wsi": {"mean_auc": 0.9101, "auc_population_std": 0.0502, "pooled_auc": 0.9003, "accuracy": 0.8250, "sensitivity": 0.8194, "specificity": 0.8303, "f1": 0.8194}
+    }
+  }
+}
+
